@@ -45,6 +45,9 @@ gem 'json'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  gem 'pry'
 end
 
 group :development do
@@ -55,3 +58,10 @@ group :development do
   gem 'spring'
 end
 
+group :test do
+  gem 'rspec'
+  gem 'capybara'
+  gem 'guard-spork'
+  gem 'spork'
+  gem 'cucumber-rails', require: false
+end
